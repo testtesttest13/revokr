@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/"],
     },
-    sitemap: "https://getrekovr.com/sitemap.xml",
+    sitemap: "https://getrevokr.com/sitemap.xml",
   };
 }

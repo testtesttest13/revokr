@@ -36,7 +36,7 @@ export function generateMetadata({
     openGraph: {
       title: post.seoTitle || post.title,
       description: post.description,
-      url: `https://getrekovr.com/blog/${post.slug}`,
+      url: `https://getrevokr.com/blog/${post.slug}`,
       siteName: "Rekovr",
       locale: "fr_FR",
       type: "article",
@@ -284,7 +284,7 @@ export default function BlogPostPage({
     headline: post.title,
     description: post.description,
     image: post.ogImage
-      ? `https://getrekovr.com${post.ogImage}`
+      ? `https://getrevokr.com${post.ogImage}`
       : undefined,
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
@@ -297,11 +297,11 @@ export default function BlogPostPage({
     publisher: {
       "@type": "Organization",
       name: "Rekovr",
-      url: "https://getrekovr.com",
+      url: "https://getrevokr.com",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://getrekovr.com/blog/${post.slug}`,
+      "@id": `https://getrevokr.com/blog/${post.slug}`,
     },
   };
 
@@ -314,19 +314,19 @@ export default function BlogPostPage({
         "@type": "ListItem",
         position: 1,
         name: "Accueil",
-        item: "https://getrekovr.com",
+        item: "https://getrevokr.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://getrekovr.com/blog",
+        item: "https://getrevokr.com/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: post.title,
-        item: `https://getrekovr.com/blog/${post.slug}`,
+        item: `https://getrevokr.com/blog/${post.slug}`,
       },
     ],
   };
