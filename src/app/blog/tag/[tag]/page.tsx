@@ -33,13 +33,13 @@ export function generateMetadata({
     openGraph: {
       title: `Articles sur ${displayTag} | Blog Rekovr`,
       description: `Tous les articles Rekovr sur le theme ${displayTag}.`,
-      url: `https://getrevokr.com/blog/tag/${params.tag}`,
+      url: `https://getrekovr.com/blog/tag/${params.tag}`,
       siteName: "Rekovr",
       locale: "fr_FR",
       type: "website",
     },
     alternates: {
-      canonical: `https://getrevokr.com/blog/tag/${params.tag}`,
+      canonical: `https://getrekovr.com/blog/tag/${params.tag}`,
     },
   };
 }

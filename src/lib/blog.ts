@@ -70,7 +70,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     featured: data.featured || false,
     draft: data.draft || false,
     canonical:
-      data.canonical || `https://getrevokr.com/blog/${slug}`,
+      data.canonical || `https://getrekovr.com/blog/${slug}`,
     affiliateLink:
       data.affiliateLink ||
       "https://apps.shopify.com/kanal-marketing-ai?ref=rekovr",

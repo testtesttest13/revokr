@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Rekovr — Expert WhatsApp Marketing pour Shopify",
     description:
       "On configure et optimise WhatsApp pour votre boutique Shopify. Paniers abandonnés, campagnes, upsells. +96% de taux d'ouverture.",
-    url: "https://getrevokr.com",
+    url: "https://getrekovr.com",
     siteName: "Rekovr",
     locale: "fr_FR",
     type: "website",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  metadataBase: new URL("https://getrevokr.com"),
+  metadataBase: new URL("https://getrekovr.com"),
 };
 
 export default function RootLayout({
@@ -63,7 +63,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Rekovr",
-    url: "https://getrevokr.com",
+    url: "https://getrekovr.com",
     description:
       "Expert WhatsApp Marketing pour e-commerçants Shopify, propulsé par Kanal.",
     contactPoint: {
@@ -78,7 +78,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Rekovr",
-    url: "https://getrevokr.com",
+    url: "https://getrekovr.com",
     description:
       "Agence d'experts WhatsApp Marketing pour e-commerçants Shopify. Configuration Kanal, récupération de paniers abandonnés, campagnes WhatsApp.",
     priceRange: "€€",

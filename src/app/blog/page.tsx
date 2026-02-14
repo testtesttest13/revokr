@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Le Blog Rekovr | WhatsApp Marketing, Shopify & E-commerce",
     description:
       "Guides, tutoriels et strategies pour booster vos ventes Shopify avec WhatsApp Marketing.",
-    url: "https://getrevokr.com/blog",
+    url: "https://getrekovr.com/blog",
     siteName: "Rekovr",
     locale: "fr_FR",
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Guides et strategies pour booster vos ventes Shopify avec WhatsApp.",
   },
   alternates: {
-    canonical: "https://getrevokr.com/blog",
+    canonical: "https://getrekovr.com/blog",
   },
 };
 
