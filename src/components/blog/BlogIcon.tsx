@@ -76,7 +76,7 @@ function IconSvg({ name }: { name: string }) {
   }
 }
 
-export default function BlogIcon({ tags, slug }: { tags: string[]; slug: string }) {
+export default function BlogIcon({ slug }: { tags?: string[]; slug: string }) {
   const data = getIconData(slug);
 
   return (
