@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import TagPill from "./TagPill";
+import BlogIcon from "./BlogIcon";
 
 interface BlogCardProps {
   slug: string;
@@ -17,8 +17,6 @@ export default function BlogCard({
   slug,
   title,
   description,
-  image,
-  imageAlt,
   tags,
   publishedAt,
   readingTime,
@@ -32,23 +30,15 @@ export default function BlogCard({
   return (
     <Link href={`/blog/${slug}`} className="group block">
       <article className="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:border-whatsapp/30 hover:translate-y-[-4px]">
-        {/* Image */}
-        <div className="relative aspect-video overflow-hidden rounded-t-2xl">
-          <Image
-            src={image}
-            alt={imageAlt}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
+        {/* Icon area */}
+        <BlogIcon tags={tags} slug={slug} />
 
         {/* Content */}
         <div className="p-6">
           {/* Tags */}
           {tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-3">
-              {tags.map((tag) => (
+              {tags.slice(0, 2).map((tag) => (
                 <TagPill key={tag} tag={tag} />
               ))}
             </div>

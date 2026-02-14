@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getFeaturedPosts, getAllTags } from "@/lib/blog";
 import BlogCard from "@/components/blog/BlogCard";
+import BlogIcon from "@/components/blog/BlogIcon";
 import TagPill from "@/components/blog/TagPill";
 
 export const metadata: Metadata = {
@@ -89,16 +90,12 @@ export default function BlogPage() {
             </p>
             <Link href={`/blog/${featuredPost.slug}`} className="group block">
               <article className="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:border-whatsapp/30 hover:shadow-[0_0_40px_rgba(37,211,102,0.08)] md:grid md:grid-cols-2">
-                {/* Image */}
+                {/* Icon */}
                 <div className="relative aspect-[16/10] md:aspect-auto md:min-h-[360px] overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={featuredPost.image}
-                    alt={featuredPost.imageAlt}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent md:bg-gradient-to-l" />
-                  <span className="absolute top-4 left-4 bg-whatsapp/90 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <div className="absolute inset-0">
+                    <BlogIcon tags={featuredPost.tags} slug={featuredPost.slug} />
+                  </div>
+                  <span className="absolute top-4 left-4 bg-whatsapp/90 text-white text-xs font-semibold px-3 py-1 rounded-full z-10">
                     Featured
                   </span>
                 </div>

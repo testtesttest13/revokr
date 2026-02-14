@@ -370,6 +370,7 @@ export default function BlogPostPage({
       {/* Header */}
       <BlogHeader
         title={post.title}
+        slug={post.slug}
         tags={post.tags}
         publishedAt={post.publishedAt}
         readingTime={`${post.readingTime} min`}

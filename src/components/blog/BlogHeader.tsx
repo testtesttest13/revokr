@@ -1,9 +1,10 @@
-import Image from "next/image";
 import Breadcrumbs from "./Breadcrumbs";
 import TagPill from "./TagPill";
+import BlogIcon from "./BlogIcon";
 
 interface BlogHeaderProps {
   title: string;
+  slug: string;
   tags: string[];
   publishedAt: string;
   readingTime: string;
@@ -13,11 +14,10 @@ interface BlogHeaderProps {
 
 export default function BlogHeader({
   title,
+  slug,
   tags,
   publishedAt,
   readingTime,
-  image,
-  imageAlt,
 }: BlogHeaderProps) {
   const formattedDate = new Date(publishedAt).toLocaleDateString("fr-FR", {
     day: "numeric",
@@ -62,16 +62,9 @@ export default function BlogHeader({
         {formattedDate} &middot; {readingTime}
       </p>
 
-      {/* Hero image */}
-      <div className="relative aspect-video rounded-2xl overflow-hidden">
-        <Image
-          src={image}
-          alt={imageAlt}
-          fill
-          priority
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 896px"
-        />
+      {/* Hero icon */}
+      <div className="rounded-2xl overflow-hidden">
+        <BlogIcon tags={tags} slug={slug} />
       </div>
     </header>
   );
