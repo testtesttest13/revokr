@@ -8,6 +8,7 @@ import Process from "@/components/Process";
 import RoiCalculator from "@/components/RoiCalculator";
 import Founder from "@/components/Founder";
 import FAQ from "@/components/FAQ";
+import BlogSection from "@/components/BlogSection";
 import PreFooterCTA from "@/components/PreFooterCTA";
 import Footer from "@/components/Footer";
 import BookingProvider from "@/components/BookingProvider";
@@ -26,6 +27,7 @@ export default function Home() {
         <RoiCalculator />
         <Founder />
         <FAQ />
+        <BlogSection />
         <PreFooterCTA />
       </main>
       <Footer />

@@ -1,0 +1,153 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+interface BlogPreview {
+  slug: string;
+  title: string;
+  description: string;
+  tags: string[];
+  publishedAt: string;
+  readingTime: number;
+}
+
+const featuredPosts: BlogPreview[] = [
+  {
+    slug: "kanal-avis",
+    title: "Kanal Avis 2026 : Mon Test Complet de l'App WhatsApp Shopify",
+    description:
+      "Test complet de Kanal, l'app WhatsApp Marketing #1 sur Shopify. Fonctionnalités, prix, résultats réels et avis honnête.",
+    tags: ["kanal", "avis"],
+    publishedAt: "2026-02-15",
+    readingTime: 14,
+  },
+  {
+    slug: "whatsapp-marketing-ecommerce-guide",
+    title: "WhatsApp Marketing E-commerce : Le Guide Ultime 2026",
+    description:
+      "Le guide complet du WhatsApp Marketing pour e-commerçants. Stratégies, flows, templates, ROI et outils.",
+    tags: ["guide", "whatsapp-marketing"],
+    publishedAt: "2026-02-17",
+    readingTime: 22,
+  },
+  {
+    slug: "recuperer-paniers-abandonnes-whatsapp",
+    title: "Récupérer ses Paniers Abandonnés par WhatsApp",
+    description:
+      "Comment récupérer 15-35% de vos paniers abandonnés grâce à WhatsApp. Stratégie, timing et templates.",
+    tags: ["panier-abandonne", "shopify"],
+    publishedAt: "2026-02-19",
+    readingTime: 12,
+  },
+];
+
+function formatDate(dateStr: string) {
+  return new Date(dateStr).toLocaleDateString("fr-FR", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
+
+export default function BlogSection() {
+  return (
+    <section className="relative bg-[#0a0a0a] py-24 md:py-32">
+      <div className="absolute inset-0 hero-grid-bg" />
+      <div className="relative z-10 max-w-5xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-14"
+        >
+          <p className="text-whatsapp/40 text-xs font-mono uppercase tracking-widest mb-3">
+            {"// Le Blog"}
+          </p>
+          <h2 className="font-syne font-bold text-section text-white mb-4">
+            Guides et stratégies WhatsApp Marketing.
+          </h2>
+          <p className="text-white/40 text-lg max-w-2xl mx-auto">
+            Par Jules, expert certifié Kanal et e-commerçant Shopify.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-5 mb-10">
+          {featuredPosts.map((post, i) => (
+            <motion.div
+              key={post.slug}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+            >
+              <Link
+                href={`/blog/${post.slug}`}
+                className="block glass-card rounded-2xl overflow-hidden hover:border-whatsapp/30 transition-all hover:-translate-y-1 group h-full"
+              >
+                {/* Placeholder image area */}
+                <div className="aspect-video bg-gradient-to-br from-whatsapp/10 to-whatsapp/5 flex items-center justify-center">
+                  <svg
+                    className="w-10 h-10 text-whatsapp/30"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                    />
+                  </svg>
+                </div>
+
+                <div className="p-5">
+                  {/* Tags */}
+                  <div className="flex gap-2 mb-3">
+                    {post.tags.slice(0, 2).map((tag) => (
+                      <span
+                        key={tag}
+                        className="bg-whatsapp/10 text-whatsapp text-[11px] px-2.5 py-0.5 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="font-syne font-bold text-lg text-white group-hover:text-whatsapp transition-colors line-clamp-2 mb-2">
+                    {post.title}
+                  </h3>
+
+                  {/* Excerpt */}
+                  <p className="text-white/40 text-sm line-clamp-3 mb-4">
+                    {post.description}
+                  </p>
+
+                  {/* Footer */}
+                  <div className="flex items-center gap-2 text-white/30 text-xs">
+                    <span>Jules</span>
+                    <span>·</span>
+                    <span>{formatDate(post.publishedAt)}</span>
+                    <span>·</span>
+                    <span>{post.readingTime} min</span>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 border border-whatsapp/30 text-whatsapp hover:bg-whatsapp/10 font-medium px-8 py-3 rounded-full text-sm transition-all"
+          >
+            Voir tous les articles &rarr;
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}

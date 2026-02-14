@@ -1,0 +1,417 @@
+---
+title: "RGPD et WhatsApp Marketing : Le Guide de Conformité 2026"
+slug: "rgpd-whatsapp-marketing"
+description: "Les règles RGPD pour le WhatsApp Marketing. Opt-in, consentement, stockage données, droits utilisateurs. Checklist conformité complète."
+author: "Jules"
+authorRole: "Fondateur Rekovr · Expert Certifié Kanal"
+authorBio: "Expert e-commerce Shopify depuis 2019. Premier expert certifié Kanal en France."
+publishedAt: "2026-03-03"
+updatedAt: "2026-03-03"
+readingTime: 10
+category: "whatsapp-marketing"
+tags: ["whatsapp-marketing", "guide", "ecommerce"]
+image: "/images/blog/rgpd-whatsapp-hero.webp"
+imageAlt: "RGPD WhatsApp Marketing Guide Conformité"
+ogImage: "/images/blog/rgpd-whatsapp-hero.webp"
+featured: false
+draft: false
+seoTitle: "RGPD WhatsApp Marketing : Guide Conformité 2026"
+canonical: "https://getrekovr.com/blog/rgpd-whatsapp-marketing"
+faqSchema: true
+affiliateLink: "https://apps.shopify.com/kanal-marketing-ai?ref=rekovr"
+---
+
+Le WhatsApp Marketing est le canal le plus performant pour les e-commerçants en 2026. Mais cette puissance vient avec une responsabilité : respecter le **RGPD** (Règlement Général sur la Protection des Données). Envoyer des messages WhatsApp à vos clients sans respecter le cadre légal, c'est risquer des amendes pouvant atteindre **20 millions d'euros** ou **4% de votre chiffre d'affaires annuel** --- sans compter le bannissement de votre numéro WhatsApp Business.
+
+Ce guide vous donne toutes les clés pour faire du WhatsApp Marketing **en toute conformité** : les règles à respecter, les méthodes de collecte d'opt-in, ce que votre BSP gère automatiquement, et une checklist complète pour vérifier votre conformité.
+
+> **Avertissement** : ce guide fournit des informations générales sur la conformité RGPD appliquée au WhatsApp Marketing. Il ne constitue pas un conseil juridique. Pour des situations spécifiques, consultez un juriste spécialisé en droit du numérique.
+
+## Les fondamentaux du RGPD appliqué au WhatsApp Marketing
+
+Le RGPD s'applique à **toute entreprise** qui traite les données personnelles de résidents européens, quelle que soit sa taille ou sa localisation. Le numéro de téléphone est une donnée personnelle. Envoyer des messages WhatsApp marketing est un traitement de données personnelles. Le RGPD s'applique donc pleinement.
+
+### Les 6 principes du RGPD que vous devez respecter
+
+**1. Licéité, loyauté et transparence**
+
+Vous devez avoir une **base légale** pour traiter les données de vos clients (consentement, intérêt légitime, exécution d'un contrat...) et être transparent sur la manière dont vous les utilisez.
+
+Pour le WhatsApp Marketing, la base légale la plus solide est le **consentement explicite** (opt-in). L'intérêt légitime est théoriquement utilisable dans certains cas, mais le consentement reste la voie recommandée par la CNIL pour les communications marketing sur messagerie.
+
+**2. Limitation des finalités**
+
+Les données collectées pour le WhatsApp Marketing ne doivent être utilisées que pour cette finalité. Vous ne pouvez pas collecter un numéro de téléphone pour le suivi de commande et l'utiliser ensuite pour des campagnes promotionnelles --- à moins que le client ait consenti aux deux usages.
+
+**3. Minimisation des données**
+
+Ne collectez que les données **strictement nécessaires**. Pour le WhatsApp Marketing, cela signifie : numéro de téléphone, prénom (pour la personnalisation) et éventuellement l'email pour le matching avec votre base client. Pas besoin de l'adresse postale, de la date de naissance ou d'autres données superflues.
+
+**4. Exactitude des données**
+
+Les données doivent être **à jour et exactes**. Si un client change de numéro ou vous demande de corriger ses informations, vous devez le faire sans délai.
+
+**5. Limitation de la conservation**
+
+Vous ne pouvez pas conserver les données indéfiniment. Définissez une **durée de conservation** claire : par exemple, 3 ans après la dernière interaction ou le dernier achat. Au-delà, les données doivent être supprimées ou anonymisées.
+
+**6. Intégrité et confidentialité**
+
+Les données doivent être **protégées** contre les accès non autorisés, les pertes et les modifications accidentelles. L'utilisation de l'API WhatsApp Business officielle (qui chiffre les données de bout en bout) via un BSP certifié répond à cette exigence.
+
+### Le consentement : la pierre angulaire
+
+Pour le WhatsApp Marketing, le consentement (opt-in) est la base légale recommandée et la plus sûre. Voici ce que la loi exige concrètement.
+
+**Un consentement valide doit être :**
+
+- **Libre** : le client ne doit pas être contraint. Pas de conditionnement du type "cochez cette case pour finaliser votre commande"
+- **Spécifique** : le consentement doit porter explicitement sur la réception de messages WhatsApp marketing. Un consentement générique "J'accepte de recevoir des communications commerciales" ne suffit pas si WhatsApp n'est pas mentionné
+- **Éclairé** : le client doit savoir à quoi il consent. Précisez la nature des messages (promotions, actualités, suivi de commande), la fréquence approximative, et comment se désabonner
+- **Univoque** : une action positive et claire de l'utilisateur. Une case à cocher (non pré-cochée), un clic sur un bouton, un message envoyé
+
+**Ce qui N'EST PAS un consentement valide :**
+
+- Une case pré-cochée
+- Un consentement enfoui dans des CGV que personne ne lit
+- Un consentement obtenu par pression ("Acceptez pour bénéficier de -20%")
+- L'ajout de numéros récupérés dans un annuaire ou sur les réseaux sociaux
+- Le transfert de contacts depuis une autre base sans re-consentement spécifique
+
+## Comment collecter des opt-in WhatsApp (les bonnes méthodes)
+
+La qualité de votre collecte d'opt-in détermine à la fois votre conformité RGPD et la performance de votre WhatsApp Marketing. Voici les méthodes qui fonctionnent.
+
+### Méthode 1 : La checkbox au checkout Shopify
+
+C'est la méthode la plus naturelle et la plus efficace pour un e-commerçant. Au moment du checkout, ajoutez une checkbox dédiée.
+
+**Template de checkbox opt-in :**
+
+```
+[ ] J'accepte de recevoir des offres, actualités et
+    informations sur mes commandes par WhatsApp au numéro
+    renseigné ci-dessus. Je peux me désabonner à tout moment
+    en envoyant STOP. Politique de confidentialité.
+```
+
+**Points clés :**
+
+- La case ne doit **jamais** être pré-cochée
+- Le texte doit mentionner explicitement **WhatsApp**
+- La **fréquence** et la **nature** des messages doivent être indiquées
+- Le moyen de **désabonnement** doit être mentionné
+- Un lien vers votre **politique de confidentialité** est obligatoire
+
+Avec un BSP comme Kanal, cette checkbox s'intègre automatiquement dans le checkout Shopify. Le consentement est horodaté et stocké pour traçabilité.
+
+**Taux de conversion typique** : 15 à 30% des acheteurs cochent la case --- ce qui signifie qu'environ un quart de vos clients rejoignent votre base WhatsApp à chaque commande.
+
+### Méthode 2 : Le popup ou widget dédié
+
+Un popup ou un widget sur votre boutique Shopify, dédié à l'inscription WhatsApp. Plus visible qu'une checkbox au checkout, il permet de capter des opt-in en amont de l'achat.
+
+**Template de popup opt-in :**
+
+```
+Recevez nos offres exclusives sur WhatsApp !
+
+- Nouveautés en avant-première
+- Ventes flash réservées aux abonnés WhatsApp
+- Suivi de commande en temps réel
+
+[Votre numéro WhatsApp : +33...]
+[S'abonner]
+
+En cliquant sur "S'abonner", vous acceptez de recevoir
+des messages WhatsApp marketing de notre part.
+Vous pouvez vous désabonner à tout moment en envoyant STOP.
+Consultez notre politique de confidentialité.
+```
+
+**Bonnes pratiques :**
+
+- Proposez une **valeur claire** en échange de l'opt-in (offres exclusives, code promo, contenu premium)
+- Ne soyez pas **intrusif** : déclenchez le popup après 30 secondes de navigation ou à l'intention de sortie, pas immédiatement
+- Offrez un **moyen de fermer** le popup facilement
+
+### Méthode 3 : Click-to-WhatsApp Ads (CTWA)
+
+Les Click-to-WhatsApp Ads sont des publicités Facebook et Instagram qui, au clic, ouvrent une conversation WhatsApp avec votre entreprise. Le simple fait d'initier la conversation constitue un **consentement implicite** à l'échange, mais pour envoyer des messages marketing ultérieurs, vous devez obtenir un **opt-in explicite** dans la conversation.
+
+**Flow CTWA avec opt-in :**
+
+1. Le client clique sur la publicité et ouvre WhatsApp
+2. Votre chatbot l'accueille et répond à sa demande initiale (information produit, offre...)
+3. À la fin de l'échange, le chatbot propose : "Souhaitez-vous recevoir nos offres exclusives sur WhatsApp ? Répondez OUI pour vous abonner."
+4. Le client répond "OUI" --- c'est votre opt-in
+
+Cette méthode est redoutablement efficace car le client est **déjà dans WhatsApp** et **déjà engagé** dans la conversation. Les taux d'opt-in atteignent **40 à 60%**.
+
+### Méthode 4 : Le QR Code
+
+Si vous avez un point de vente physique, des événements ou des packagings, le QR Code est un excellent vecteur d'opt-in.
+
+**Mise en place :**
+
+- Générez un QR Code qui ouvre directement WhatsApp avec un message pré-rempli (ex : "ABONNER")
+- Placez-le sur vos emballages, flyers, cartes de visite, comptoir de caisse, affiches en magasin
+- Quand le client scanne et envoie le message, votre chatbot déclenche le flow d'opt-in avec les mentions légales
+
+**Template de message pré-rempli :** "Bonjour ! Je souhaite m'abonner à vos alertes WhatsApp."
+
+Votre chatbot répond alors avec les conditions et demande une confirmation explicite.
+
+### Méthode 5 : La landing page dédiée
+
+Créez une page sur votre boutique Shopify spécifiquement dédiée à l'inscription WhatsApp. Cette page peut être référencée dans vos emails, sur vos réseaux sociaux, et dans vos campagnes publicitaires.
+
+**Contenu de la landing page :**
+
+- Explication claire de ce que le client recevra
+- Avantages exclusifs de l'abonnement WhatsApp
+- Formulaire de saisie du numéro de téléphone
+- Checkbox de consentement explicite
+- Politique de confidentialité
+
+## Le droit de retrait : comment gérer les désabonnements
+
+Le RGPD impose que le retrait du consentement soit **aussi simple que son obtention**. Concrètement, cela signifie :
+
+### Le mécanisme de désabonnement obligatoire
+
+Chaque message marketing WhatsApp doit offrir un moyen **simple et immédiat** de se désabonner. Les bonnes pratiques :
+
+- **Bouton "Arrêter les notifications"** : intégré dans le template du message
+- **Mot-clé STOP** : le client envoie "STOP" et est automatiquement désabonné
+- **Lien de gestion des préférences** : redirige vers une page où le client peut gérer ses abonnements
+
+### Le traitement du désabonnement
+
+Quand un client se désabonne, vous devez :
+
+1. **Cesser immédiatement** tout envoi marketing (pas "à la prochaine campagne" --- immédiatement)
+2. **Confirmer** la prise en compte : "Votre désabonnement a été pris en compte. Vous ne recevrez plus de messages marketing de notre part."
+3. **Conserver la preuve** du désabonnement (date, heure, méthode)
+4. **Ne pas recontacter** le client à des fins marketing, sauf nouveau consentement explicite
+
+**Attention** : le désabonnement des messages marketing n'empêche pas l'envoi de messages **transactionnels** (confirmation de commande, suivi de livraison) si le client a une commande en cours. Ces messages relèvent de l'exécution du contrat, pas du marketing.
+
+## Les droits des utilisateurs que vous devez respecter
+
+Au-delà du consentement et du retrait, le RGPD accorde aux utilisateurs plusieurs droits que vous devez pouvoir honorer.
+
+### Droit d'accès (Article 15)
+
+Tout client peut vous demander : "Quelles données personnelles détenez-vous sur moi ?" Vous devez pouvoir fournir une copie de toutes les données que vous possédez : numéro de téléphone, historique des messages, date d'opt-in, tags, segmentation, etc.
+
+**Délai de réponse** : 1 mois maximum.
+
+### Droit de rectification (Article 16)
+
+Le client peut demander la correction de ses données. Si son numéro de téléphone change ou si son prénom est mal orthographié, vous devez corriger sans délai.
+
+### Droit à l'effacement (Article 17)
+
+Le fameux "droit à l'oubli". Le client peut demander la suppression complète de ses données. Vous devez alors :
+
+- Supprimer son numéro de votre base WhatsApp
+- Supprimer son historique de conversations (sauf obligations légales de conservation)
+- Supprimer toutes les données associées
+- Confirmer la suppression au client
+
+**Délai** : 1 mois maximum, idéalement sous 72 heures.
+
+### Droit à la portabilité (Article 20)
+
+Le client peut demander à recevoir ses données dans un **format structuré, lisible par machine** (CSV, JSON...) pour les transférer à un autre service.
+
+### Droit d'opposition (Article 21)
+
+Le client peut s'opposer à tout moment au traitement de ses données à des fins de marketing. Ce droit doit être respecté sans avoir à fournir de justification.
+
+## Ce que Kanal gère automatiquement en matière de conformité
+
+Un des avantages d'utiliser un BSP professionnel comme Kanal est qu'une grande partie de la conformité RGPD est **gérée automatiquement**. Voici ce que Kanal prend en charge.
+
+### Collecte et stockage des consentements
+
+Kanal **enregistre automatiquement** chaque consentement opt-in avec :
+
+- La date et l'heure exactes du consentement
+- La méthode de collecte (checkout, widget, CTWA, etc.)
+- Le texte de consentement présenté au client
+- L'adresse IP (quand applicable)
+
+Ces preuves de consentement sont stockées et accessibles en cas de contrôle.
+
+### Gestion automatique des désabonnements
+
+Quand un client envoie "STOP" ou clique sur le bouton de désabonnement :
+
+- Kanal **arrête immédiatement** tout envoi marketing vers ce contact
+- Le désabonnement est **enregistré** avec horodatage
+- Le contact est **marqué comme opt-out** dans votre base
+- Une **confirmation** est envoyée automatiquement au client
+
+Vous n'avez rien à faire manuellement. Le processus est instantané et conforme.
+
+### Conformité des templates Meta
+
+Les templates de messages doivent être approuvés par Meta avant envoi. Kanal :
+
+- Soumet automatiquement vos templates à Meta pour validation
+- S'assure que les templates respectent les **guidelines Meta** (pas de contenu trompeur, option de désabonnement, etc.)
+- Vous alerte si un template est refusé avec les raisons et les corrections à apporter
+
+### Infrastructure sécurisée
+
+Kanal utilise l'API WhatsApp Business officielle qui assure :
+
+- Le **chiffrement de bout en bout** des conversations
+- Le stockage des données sur des serveurs conformes au RGPD
+- Des protocoles de sécurité certifiés
+
+Pour un avis complet sur Kanal et ses fonctionnalités, consultez notre [test détaillé](/blog/kanal-avis).
+
+[Démarrer en toute conformité avec Kanal](https://apps.shopify.com/kanal-marketing-ai?ref=rekovr)
+
+## Checklist de conformité RGPD pour le WhatsApp Marketing
+
+Utilisez cette checklist pour vérifier que votre utilisation du WhatsApp Marketing est conforme au RGPD. Cochez chaque point.
+
+### Collecte du consentement
+
+- [ ] Mes opt-in sont collectés via une **action positive explicite** (case non pré-cochée, bouton, message envoyé)
+- [ ] Le consentement est **spécifique à WhatsApp** (pas un consentement générique "communications commerciales")
+- [ ] Le texte de consentement mentionne la **nature des messages** (promotions, actualités, suivi)
+- [ ] Le texte de consentement mentionne la **fréquence approximative** d'envoi
+- [ ] Le texte de consentement mentionne le **moyen de désabonnement**
+- [ ] Un lien vers la **politique de confidentialité** est présent
+- [ ] Le consentement est **horodaté et stocké** (preuve de consentement)
+
+### Gestion des données
+
+- [ ] Seules les données **nécessaires** sont collectées (minimisation)
+- [ ] Les données sont **à jour** et un processus de correction est en place
+- [ ] Une **durée de conservation** est définie et respectée
+- [ ] Les données sont **sécurisées** (API officielle, BSP certifié, accès restreint)
+- [ ] Un **registre des traitements** incluant le WhatsApp Marketing est tenu
+
+### Droits des utilisateurs
+
+- [ ] Un processus de **désabonnement** simple et immédiat est en place
+- [ ] Les demandes de **droit d'accès** peuvent être traitées sous 1 mois
+- [ ] Les demandes de **droit d'effacement** peuvent être traitées sous 1 mois
+- [ ] Les demandes de **droit de rectification** sont traitées sans délai
+- [ ] Les demandes de **droit à la portabilité** peuvent être honorées
+
+### Communication
+
+- [ ] Chaque message marketing inclut une **option de désabonnement**
+- [ ] Les templates sont **approuvés par Meta** avant envoi
+- [ ] La **fréquence d'envoi** respecte l'engagement pris lors de l'opt-in
+- [ ] Les messages sont envoyés uniquement à des contacts **opt-in**
+
+### Documentation
+
+- [ ] La **politique de confidentialité** du site mentionne l'utilisation de WhatsApp
+- [ ] Le traitement WhatsApp Marketing est inscrit au **registre des traitements**
+- [ ] Un **DPO** (Délégué à la Protection des Données) est désigné si nécessaire (obligatoire pour les entreprises de plus de 250 salariés ou les traitements à grande échelle)
+
+## Template de politique de consentement WhatsApp
+
+Voici un template que vous pouvez adapter pour votre politique de confidentialité :
+
+---
+
+**Communication par WhatsApp**
+
+En cochant la case "J'accepte de recevoir des communications par WhatsApp" lors de votre commande ou de votre inscription, vous consentez à recevoir de notre part des messages via WhatsApp, incluant :
+
+- Des offres promotionnelles et codes de réduction exclusifs
+- Des informations sur les nouveaux produits et collections
+- Des alertes sur les ventes flash et événements spéciaux
+- Des messages de suivi relatifs à vos commandes
+
+Fréquence : vous recevrez en moyenne 2 à 4 messages marketing par mois, en plus des messages transactionnels liés à vos commandes.
+
+Vos données (numéro de téléphone, prénom) sont traitées sur la base de votre consentement explicite, conformément au Règlement (UE) 2016/679 (RGPD). Elles sont conservées pendant une durée maximale de 3 ans après votre dernière interaction.
+
+Vous pouvez retirer votre consentement à tout moment en envoyant le mot "STOP" dans la conversation WhatsApp, ou en nous contactant à [email]. Le retrait du consentement n'affecte pas la licéité du traitement effectué avant ce retrait.
+
+Pour exercer vos droits (accès, rectification, effacement, portabilité, opposition), contactez-nous à [email] ou écrivez-nous à [adresse postale].
+
+Pour toute réclamation, vous pouvez contacter la CNIL (Commission Nationale de l'Informatique et des Libertés) : www.cnil.fr.
+
+---
+
+## Les erreurs de conformité les plus fréquentes
+
+Voici les erreurs que je constate le plus souvent chez les e-commerçants qui se lancent dans le WhatsApp Marketing --- et comment les éviter.
+
+### Erreur 1 : La case pré-cochée
+
+Encore trop de boutiques utilisent une case de consentement pré-cochée au checkout. C'est **illégal** depuis l'entrée en vigueur du RGPD en 2018. La CNIL a sanctionné plusieurs entreprises pour cette pratique.
+
+**Solution** : case toujours décochée par défaut.
+
+### Erreur 2 : Le consentement "fourre-tout"
+
+"J'accepte de recevoir des communications commerciales par email, SMS et WhatsApp." Ce consentement unique pour plusieurs canaux est **risqué**. Idéalement, le consentement WhatsApp doit être distinct.
+
+**Solution** : une checkbox séparée pour chaque canal, ou au minimum une mention explicite de WhatsApp.
+
+### Erreur 3 : Pas de preuve de consentement
+
+Si la CNIL vous demande de prouver que tel client a consenti à recevoir vos messages WhatsApp et que vous ne pouvez pas, c'est une non-conformité. La charge de la preuve vous incombe.
+
+**Solution** : utilisez un BSP comme Kanal qui horodate et stocke automatiquement chaque consentement.
+
+### Erreur 4 : Ignorer les demandes de désabonnement
+
+Un client envoie "STOP" et reçoit un message marketing 3 jours plus tard. C'est une violation directe du RGPD.
+
+**Solution** : automatisez le traitement des désabonnements. Avec Kanal, c'est automatique et instantané.
+
+### Erreur 5 : Pas de politique de confidentialité à jour
+
+Votre politique de confidentialité ne mentionne pas le traitement des données via WhatsApp. En cas de contrôle, c'est un manquement à l'obligation de transparence.
+
+**Solution** : mettez à jour votre politique de confidentialité en incluant une section dédiée au WhatsApp Marketing (utilisez le template ci-dessus).
+
+## FAQ : RGPD et WhatsApp Marketing
+
+### Ai-je besoin du consentement pour envoyer une confirmation de commande par WhatsApp ?
+
+Les messages **transactionnels** (confirmation de commande, suivi de livraison, mise à jour de commande) peuvent être envoyés sur la base de l'**exécution du contrat** (article 6.1.b du RGPD), sans nécessiter un consentement marketing distinct. Cependant, le client doit avoir fourni son numéro WhatsApp dans le cadre de la commande, et ces messages ne doivent contenir **aucun contenu promotionnel**.
+
+### Puis-je utiliser ma base email existante pour le WhatsApp Marketing ?
+
+Non, pas directement. Un consentement email ne vaut pas consentement WhatsApp. Vous devez obtenir un **consentement spécifique** pour le canal WhatsApp. Vous pouvez cependant contacter votre base email pour les **inviter à s'inscrire** à vos communications WhatsApp (via un lien d'opt-in par exemple).
+
+### Combien de temps puis-je conserver les données des contacts WhatsApp ?
+
+Le RGPD impose une **limitation de conservation** proportionnée. La pratique recommandée est de conserver les données des contacts WhatsApp actifs (qui interagissent avec vos messages) pendant **3 ans après la dernière interaction**. Pour les contacts inactifs, une purge après **12 mois** sans interaction est recommandée.
+
+### Que faire si un client exerce son droit à l'effacement ?
+
+Vous devez **supprimer toutes les données** du client dans un délai de **1 mois** : numéro de téléphone, historique de conversations, données de segmentation, preuves de consentement. Confirmez la suppression au client par écrit. Notez que vous pouvez conserver certaines données si une obligation légale l'exige (comptabilité, fiscalité).
+
+### L'utilisation de l'API WhatsApp Business via un BSP est-elle conforme au RGPD ?
+
+Oui, à condition que le BSP soit lui-même conforme. Les BSP réputés comme Kanal agissent en tant que **sous-traitants** au sens du RGPD et garantissent la conformité de leur infrastructure (chiffrement, stockage sécurisé, Data Processing Agreement). Vérifiez que votre BSP fournit un **DPA** (Data Processing Agreement) conforme à l'article 28 du RGPD.
+
+## Conclusion : la conformité n'est pas un frein, c'est un avantage
+
+Je comprends que la conformité RGPD puisse sembler intimidante quand on se lance dans le WhatsApp Marketing. Mais en réalité, respecter les règles est **un avantage compétitif**.
+
+Pourquoi ? Parce qu'une base de contacts **100% opt-in** est infiniment plus performante qu'une base de contacts non qualifiés. Chaque personne dans votre liste a **choisi** d'être là. Elle **veut** recevoir vos messages. Résultat : des taux d'ouverture de 98%, des taux de conversion qui explosent, et un quality rating Meta au vert.
+
+La conformité RGPD n'est pas un obstacle au WhatsApp Marketing. C'est la **fondation** sur laquelle repose toute stratégie WhatsApp Marketing durable et performante.
+
+Avec un BSP comme Kanal qui automatise les aspects les plus techniques de la conformité (stockage des consentements, gestion des désabonnements, validation des templates), il n'y a plus d'excuse pour ne pas faire les choses dans les règles.
+
+Pour aller plus loin, découvrez notre [guide complet pour envoyer des messages WhatsApp en masse légalement](/blog/envoyer-messages-whatsapp-en-masse) et notre [guide du WhatsApp Marketing e-commerce](/blog/whatsapp-marketing-ecommerce-guide).
+
+[Démarrer le WhatsApp Marketing en toute conformité avec Kanal](https://apps.shopify.com/kanal-marketing-ai?ref=rekovr)
