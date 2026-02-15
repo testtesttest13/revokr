@@ -38,13 +38,13 @@ export default function Hero() {
             y: { duration: logo.duration, repeat: Infinity, ease: "easeInOut", delay: logo.delay },
             rotate: { duration: logo.duration, repeat: Infinity, ease: "easeInOut", delay: logo.delay },
           }}
-          className="absolute hidden lg:flex items-center justify-center z-20 bg-white rounded-2xl border-2 p-3"
+          className="absolute flex items-center justify-center z-20 bg-white rounded-lg lg:rounded-2xl border-[1.5px] lg:border-2 p-1 sm:p-1.5 lg:p-3"
           style={{
             top: logo.top,
             left: logo.left,
             right: logo.right,
             borderColor: logo.border,
-            boxShadow: `3px 3px 0 ${logo.shadow}`,
+            boxShadow: `2px 2px 0 ${logo.shadow}`,
           }}
         >
           <Image
@@ -52,7 +52,7 @@ export default function Hero() {
             alt={logo.alt}
             width={logo.size}
             height={logo.size}
-            className="object-contain"
+            className="object-contain w-6 h-6 sm:w-8 sm:h-8 lg:w-auto lg:h-auto"
           />
         </motion.div>
       ))}
