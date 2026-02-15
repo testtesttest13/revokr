@@ -5,7 +5,7 @@ import { useBooking } from "./BookingProvider";
 
 const beforeItems = [
   { icon: "📉", text: "Paniers abandonnés perdus à jamais", detail: "7% récupérés max" },
-  { icon: "📧", text: "Canal email seul = portée limitée", detail: "~20% d'ouverture" },
+  { icon: "📧", text: "Un seul canal de communication", detail: "Email uniquement" },
   { icon: "🔇", text: "Clients silencieux après l'achat", detail: "0 upsell, 0 fidélisation" },
 ];
 
