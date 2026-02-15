@@ -9,20 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        dark: "#0A1628",
-        cream: "#F5F1EB",
         whatsapp: "#25D366",
         "whatsapp-dark": "#1da851",
-        accent: "#FF6B6B",
         text: "#1a1a1a",
+        muted: "#666666",
+        bg: "#FAFAFA",
+        card: "#FFFFFF",
+        border: "#1a1a1a",
       },
       fontFamily: {
         syne: ["var(--font-syne)", "sans-serif"],
         manrope: ["var(--font-manrope)", "sans-serif"],
       },
       fontSize: {
-        "hero": "clamp(2.2rem, 4vw + 0.5rem, 3.75rem)",
-        "section": "clamp(1.75rem, 3vw + 0.5rem, 2.75rem)",
+        hero: "clamp(2.2rem, 4vw + 0.5rem, 3.75rem)",
+        section: "clamp(1.75rem, 3vw + 0.5rem, 2.75rem)",
+      },
+      boxShadow: {
+        brutal: "4px 4px 0 #1a1a1a",
+        "brutal-green": "4px 4px 0 #25D366",
+        "brutal-lg": "6px 6px 0 #1a1a1a",
       },
       keyframes: {
         marquee: {

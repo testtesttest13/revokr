@@ -14,32 +14,30 @@ html {
 
 body {
   font-family: var(--font-manrope), sans-serif;
-  color: #ffffff;
-  background: #0a0a0a;
+  color: #1a1a1a;
+  background: #FAFAFA;
   overflow-x: hidden;
 }
 
-/* Glass card utility */
-.glass-card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+/* Brutal card utility */
+.brutal-card {
+  background: #FFFFFF;
+  border: 2px solid #1a1a1a;
+  box-shadow: 4px 4px 0 #1a1a1a;
 }
 
-.glass-card-accent {
-  background: rgba(37, 211, 102, 0.06);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(37, 211, 102, 0.2);
+.brutal-card-accent {
+  background: #FFFFFF;
+  border: 2px solid #25D366;
+  box-shadow: 4px 4px 0 #25D366;
 }
 
 /* Grid background pattern */
 .hero-grid-bg {
   background-image:
-    linear-gradient(rgba(37, 211, 102, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37, 211, 102, 0.06) 1px, transparent 1px);
-  background-size: 80px 80px;
+    linear-gradient(#e5e5e5 1px, transparent 1px),
+    linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 /* Scrollbar */
@@ -47,7 +45,7 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #FAFAFA;
 }
 ::-webkit-scrollbar-thumb {
   background: #25D366;
@@ -61,7 +59,7 @@ input[type="range"] {
   width: 100%;
   height: 6px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(26, 26, 26, 0.1);
   outline: none;
 }
 
@@ -73,7 +71,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   background: #25D366;
   cursor: pointer;
-  border: 3px solid #0a0a0a;
+  border: 3px solid #1a1a1a;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -82,7 +80,7 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   background: #25D366;
   cursor: pointer;
-  border: 3px solid #0a0a0a;
+  border: 3px solid #1a1a1a;
 }
 
 /* Marquee pause on hover */

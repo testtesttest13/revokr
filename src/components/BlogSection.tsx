@@ -52,7 +52,7 @@ function formatDate(dateStr: string) {
 
 export default function BlogSection() {
   return (
-    <section className="relative bg-[#0a0a0a] py-24 md:py-32">
+    <section className="relative bg-[#FAFAFA] py-24 md:py-32">
       <div className="absolute inset-0 hero-grid-bg" />
       <div className="relative z-10 max-w-5xl mx-auto px-6">
         <motion.div
@@ -64,11 +64,11 @@ export default function BlogSection() {
           <p className="text-whatsapp/40 text-xs font-mono uppercase tracking-widest mb-3">
             {"// Le Blog"}
           </p>
-          <h2 className="font-syne font-bold text-section text-white mb-4">
+          <h2 className="font-syne font-bold text-section text-text mb-4">
             Guides et stratégies WhatsApp Marketing.
           </h2>
-          <p className="text-white/40 text-lg max-w-2xl mx-auto">
-            Par Jules, expert certifié Kanal et e-commerçant Shopify.
+          <p className="text-text/40 text-lg max-w-2xl mx-auto font-manrope">
+            Par Jules, expert WhatsApp Marketing et e-commerçant Shopify.
           </p>
         </motion.div>
 
@@ -83,10 +83,10 @@ export default function BlogSection() {
             >
               <Link
                 href={`/blog/${post.slug}`}
-                className="block glass-card rounded-2xl overflow-hidden hover:border-whatsapp/30 transition-all hover:-translate-y-1 group h-full"
+                className="block brutal-card rounded-xl overflow-hidden transition-all hover:-translate-y-1 group h-full"
               >
                 {/* Placeholder image area */}
-                <div className="aspect-video bg-gradient-to-br from-whatsapp/10 to-whatsapp/5 flex items-center justify-center">
+                <div className="aspect-video bg-whatsapp/10 flex items-center justify-center">
                   <svg
                     className="w-10 h-10 text-whatsapp/30"
                     fill="none"
@@ -108,7 +108,7 @@ export default function BlogSection() {
                     {post.tags.slice(0, 2).map((tag) => (
                       <span
                         key={tag}
-                        className="bg-whatsapp/10 text-whatsapp text-[11px] px-2.5 py-0.5 rounded-full"
+                        className="bg-whatsapp/10 text-whatsapp text-[11px] px-2.5 py-0.5 border border-whatsapp/30 rounded-lg"
                       >
                         {tag}
                       </span>
@@ -116,17 +116,17 @@ export default function BlogSection() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-syne font-bold text-lg text-white group-hover:text-whatsapp transition-colors line-clamp-2 mb-2">
+                  <h3 className="font-syne font-bold text-lg text-text group-hover:text-whatsapp transition-colors line-clamp-2 mb-2">
                     {post.title}
                   </h3>
 
                   {/* Excerpt */}
-                  <p className="text-white/40 text-sm line-clamp-3 mb-4">
+                  <p className="text-text/40 text-sm line-clamp-3 mb-4 font-manrope">
                     {post.description}
                   </p>
 
                   {/* Footer */}
-                  <div className="flex items-center gap-2 text-white/30 text-xs">
+                  <div className="flex items-center gap-2 text-text/30 text-xs font-manrope">
                     <span>Jules</span>
                     <span>·</span>
                     <span>{formatDate(post.publishedAt)}</span>
@@ -142,7 +142,7 @@ export default function BlogSection() {
         <div className="text-center">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 border border-whatsapp/30 text-whatsapp hover:bg-whatsapp/10 font-medium px-8 py-3 rounded-full text-sm transition-all"
+            className="inline-flex items-center gap-2 border-2 border-whatsapp text-whatsapp hover:bg-whatsapp/10 font-bold px-8 py-3 rounded-xl text-sm transition-all"
           >
             Voir tous les articles &rarr;
           </Link>

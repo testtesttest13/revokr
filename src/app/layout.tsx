@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     "WhatsApp Marketing",
     "Shopify",
     "paniers abandonnés",
-    "Kanal",
     "e-commerce",
     "WhatsApp Business",
     "récupération paniers",
@@ -65,7 +64,7 @@ export default function RootLayout({
     name: "Rekovr",
     url: "https://getrekovr.com",
     description:
-      "Expert WhatsApp Marketing pour e-commerçants Shopify, propulsé par Kanal.",
+      "Agence experte en WhatsApp Marketing pour e-commerçants Shopify.",
     contactPoint: {
       "@type": "ContactPoint",
       email: "julestambon13@gmail.com",
@@ -80,7 +79,7 @@ export default function RootLayout({
     name: "Rekovr",
     url: "https://getrekovr.com",
     description:
-      "Agence d'experts WhatsApp Marketing pour e-commerçants Shopify. Configuration Kanal, récupération de paniers abandonnés, campagnes WhatsApp.",
+      "Agence d'experts WhatsApp Marketing pour e-commerçants Shopify. Récupération de paniers abandonnés, campagnes WhatsApp, automatisation.",
     priceRange: "€€",
   };
 
@@ -106,10 +105,10 @@ export default function RootLayout({
       },
       {
         "@type": "Question",
-        name: "C'est quoi Kanal ?",
+        name: "Quels outils utilisez-vous ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "La plateforme n°1 de WhatsApp Marketing pour Shopify. C'est l'outil qu'on utilise pour automatiser vos flows et campagnes. Le Klaviyo de WhatsApp.",
+          text: "On utilise les meilleures plateformes WhatsApp du marché pour automatiser vos flows et campagnes. On sélectionne l'outil adapté à votre boutique.",
         },
       },
       {
@@ -133,7 +132,7 @@ export default function RootLayout({
         name: "Pourquoi passer par Rekovr plutôt que seul ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Vous pouvez installer Kanal seul et on vous y encourage. Mais les bons flows, messages et timing demandent de l'expertise. C'est notre métier.",
+          text: "Configurer WhatsApp Marketing soi-même est possible. Mais les bons flows, messages et timing demandent de l'expertise. On vous fait gagner du temps et maximise vos résultats.",
         },
       },
     ],
