@@ -5,13 +5,13 @@ import { useBooking } from "./BookingProvider";
 
 const beforeItems = [
   { icon: "📉", text: "Paniers abandonnés perdus à jamais", detail: "7% récupérés max" },
-  { icon: "📧", text: "Emails ignorés dans les spams", detail: "~20% d'ouverture" },
+  { icon: "📧", text: "Canal email seul = portée limitée", detail: "~20% d'ouverture" },
   { icon: "🔇", text: "Clients silencieux après l'achat", detail: "0 upsell, 0 fidélisation" },
 ];
 
 const afterItems = [
   { icon: "🛒", text: "Paniers récupérés automatiquement", detail: "35% récupérés" },
-  { icon: "💬", text: "Messages lus en 3 minutes", detail: "96% d'ouverture" },
+  { icon: "💬", text: "Messages lus en 3 minutes", detail: "80% d'ouverture" },
   { icon: "🔄", text: "Clients qui rachètent via WhatsApp", detail: "LTV ×3" },
 ];
 

@@ -50,10 +50,10 @@ function Counter({
 
 const stats = [
   {
-    value: 96,
+    value: 80,
     suffix: "%",
     label: "Taux d'ouverture",
-    detail: "L'email plafonne à 20%",
+    detail: "4× plus que l'email",
     color: "#25D366",
   },
   {
@@ -163,12 +163,12 @@ export default function Stats() {
                 </span>
                 <span className="text-text text-sm font-medium">WhatsApp</span>
               </div>
-              <span className="text-whatsapp font-syne font-bold text-lg">96%</span>
+              <span className="text-whatsapp font-syne font-bold text-lg">80%</span>
             </div>
             <div className="h-4 rounded-full bg-black/5 overflow-hidden border border-black/10">
               <motion.div
                 initial={{ width: 0 }}
-                whileInView={{ width: "96%" }}
+                whileInView={{ width: "80%" }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
                 className="h-full rounded-full bg-whatsapp"

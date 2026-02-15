@@ -10,7 +10,7 @@ export default function Footer() {
               <span className="font-syne font-bold text-xl text-text">Rekovr</span>
               <span className="w-2 h-2 rounded-full bg-whatsapp inline-block" />
             </div>
-            <p className="text-text/40 text-sm font-manrope">Vendez plus sur WhatsApp.</p>
+            <p className="text-text/40 text-sm font-manrope">Expert WhatsApp & Email pour Shopify.</p>
           </div>
           <div>
             <h4 className="font-syne font-bold text-text mb-4">Services</h4>

@@ -17,9 +17,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Rekovr — Expert WhatsApp Marketing pour Shopify | Vendez plus avec WhatsApp",
+  title: "Rekovr — Expert WhatsApp Marketing pour Shopify | Boostez votre e-commerce",
   description:
-    "On configure et optimise WhatsApp pour votre boutique Shopify. Paniers abandonnés, campagnes, upsells. +96% de taux d'ouverture. Audit gratuit.",
+    "On configure et optimise WhatsApp pour votre boutique Shopify. Paniers abandonnés, campagnes, upsells. +80% de taux d'ouverture. Audit gratuit.",
   keywords: [
     "WhatsApp Marketing",
     "Shopify",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rekovr — Expert WhatsApp Marketing pour Shopify",
     description:
-      "On configure et optimise WhatsApp pour votre boutique Shopify. Paniers abandonnés, campagnes, upsells. +96% de taux d'ouverture.",
+      "On configure et optimise WhatsApp pour votre boutique Shopify. Paniers abandonnés, campagnes, upsells. +80% de taux d'ouverture.",
     url: "https://getrekovr.com",
     siteName: "Rekovr",
     locale: "fr_FR",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rekovr — Expert WhatsApp Marketing pour Shopify",
     description:
-      "On configure et optimise WhatsApp pour votre boutique Shopify. +96% de taux d'ouverture. Audit gratuit.",
+      "On configure et optimise WhatsApp pour votre boutique Shopify. +80% de taux d'ouverture. Audit gratuit.",
     creator: "@julesshopify",
   },
   robots: {
@@ -116,7 +116,7 @@ export default function RootLayout({
         name: "Quelle différence avec Klaviyo / email ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "L'email a ~20% d'ouverture, WhatsApp dépasse 96%. C'est un canal complémentaire qui atteint vos clients là où ils sont actifs.",
+          text: "L'email reste un pilier du e-commerce (~20% d'ouverture). WhatsApp le complète avec ~80% d'ouverture. Les deux ensemble, c'est la meilleure combinaison.",
         },
       },
       {

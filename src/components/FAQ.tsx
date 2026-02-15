@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "Quelle différence avec Klaviyo / email ?",
     answer:
-      "L'email a ~20% d'ouverture, WhatsApp dépasse 96%. C'est un canal complémentaire qui atteint vos clients là où ils sont actifs.",
+      "L'email reste un pilier du e-commerce (~20% d'ouverture). WhatsApp le complète avec ~80% d'ouverture. Les deux ensemble, c'est la meilleure combinaison.",
   },
   {
     question: "Combien de temps pour voir des résultats ?",
