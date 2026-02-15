@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import { useBooking } from "./BookingProvider";
 
 const floatingLogos = [
-  { src: "/logos/shopify.png", alt: "Shopify", size: 52, top: "12%", left: "6%", rotate: -8, delay: 0, duration: 5 },
-  { src: "/logos/klaviyo.png", alt: "Klaviyo", size: 50, top: "18%", right: "7%", rotate: 10, delay: 0.5, duration: 4.5 },
-  { src: "/logos/kanal.svg", alt: "Kanal", size: 48, top: "45%", left: "4%", rotate: 6, delay: 1, duration: 5.5 },
-  { src: "/logos/meta.png", alt: "Meta", size: 50, top: "40%", right: "5%", rotate: -12, delay: 1.5, duration: 4 },
-  { src: "/logos/woo.webp", alt: "WooCommerce", size: 46, top: "65%", left: "8%", rotate: 14, delay: 0.8, duration: 5.2 },
+  { src: "/logos/shopify.png", alt: "Shopify", size: 52, top: "12%", left: "6%", rotate: -8, delay: 0, duration: 5, border: "#96BF48", shadow: "#96BF48" },
+  { src: "/logos/klaviyo.png", alt: "Klaviyo", size: 50, top: "18%", right: "7%", rotate: 10, delay: 0.5, duration: 4.5, border: "#BF2E7B", shadow: "#BF2E7B" },
+  { src: "/logos/kanal.svg", alt: "Kanal", size: 48, top: "45%", left: "4%", rotate: 6, delay: 1, duration: 5.5, border: "#25D366", shadow: "#25D366" },
+  { src: "/logos/meta.png", alt: "Meta", size: 50, top: "40%", right: "5%", rotate: -12, delay: 1.5, duration: 4, border: "#0081FB", shadow: "#0081FB" },
+  { src: "/logos/woo.webp", alt: "WooCommerce", size: 46, top: "65%", left: "8%", rotate: 14, delay: 0.8, duration: 5.2, border: "#7F54B3", shadow: "#7F54B3" },
 ];
 
 export default function Hero() {
@@ -37,11 +37,13 @@ export default function Hero() {
             y: { duration: logo.duration, repeat: Infinity, ease: "easeInOut", delay: logo.delay },
             rotate: { duration: logo.duration, repeat: Infinity, ease: "easeInOut", delay: logo.delay },
           }}
-          className="absolute hidden lg:flex items-center justify-center z-20 bg-white rounded-2xl border-2 border-[#1a1a1a] shadow-[3px_3px_0_#1a1a1a] p-3"
+          className="absolute hidden lg:flex items-center justify-center z-20 bg-white rounded-2xl border-2 p-3"
           style={{
             top: logo.top,
             left: logo.left,
             right: logo.right,
+            borderColor: logo.border,
+            boxShadow: `3px 3px 0 ${logo.shadow}`,
           }}
         >
           <Image
