@@ -20,7 +20,7 @@ export default function RelatedPosts({ posts }: RelatedPostsProps) {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-16">
-      <h2 className="font-syne font-bold text-2xl text-white mb-10">
+      <h2 className="font-syne font-bold text-2xl text-[#1a1a1a] mb-10">
         Articles connexes
       </h2>
 

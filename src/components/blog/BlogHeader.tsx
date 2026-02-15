@@ -48,22 +48,22 @@ export default function BlogHeader({
       )}
 
       {/* Title */}
-      <h1 className="font-syne font-bold text-4xl md:text-5xl text-white leading-tight mb-6">
+      <h1 className="font-syne font-bold text-4xl md:text-5xl text-[#1a1a1a] leading-tight mb-6">
         {title}
       </h1>
 
       {/* Author meta */}
-      <p className="text-white/50 text-sm mb-2">
-        Par <span className="text-white/70 font-medium">Jules</span> &middot; Fondateur Rekovr &middot; Expert Certifi&eacute; Kanal
+      <p className="text-[#1a1a1a]/50 text-sm mb-2">
+        Par <span className="text-[#1a1a1a]/70 font-medium">Jules</span> &middot; Fondateur Rekovr &middot; Expert WhatsApp Marketing
       </p>
 
       {/* Date & reading time */}
-      <p className="text-white/30 text-sm mb-10">
+      <p className="text-[#1a1a1a]/30 text-sm mb-10">
         {formattedDate} &middot; {readingTime}
       </p>
 
       {/* Hero icon */}
-      <div className="rounded-2xl overflow-hidden">
+      <div className="rounded-xl border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a] overflow-hidden">
         <BlogIcon tags={tags} slug={slug} />
       </div>
     </header>

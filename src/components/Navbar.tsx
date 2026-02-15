@@ -23,29 +23,29 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-6">
       <nav
-        className={`flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-300 ${
+        className={`mx-auto mt-4 max-w-4xl flex items-center justify-between px-4 md:px-6 py-3 rounded-full transition-all duration-500 ${
           scrolled
-            ? "bg-white border-b-2 border-[#1a1a1a]"
-            : "bg-transparent border-b-2 border-transparent"
+            ? "bg-white border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a]"
+            : "bg-white/80 border-2 border-[#1a1a1a]/20"
         }`}
       >
         {/* Logo */}
         <a href="#" className="flex items-center gap-1.5">
-          <span className="font-syne font-bold text-xl text-text">
+          <span className="font-syne font-bold text-lg text-[#1a1a1a]">
             Rekovr
           </span>
-          <span className="w-2.5 h-2.5 rounded-full bg-whatsapp inline-block" />
+          <span className="w-2 h-2 rounded-full bg-whatsapp inline-block" />
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-7">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-text/60 hover:text-text transition-colors text-sm font-manrope font-medium"
+              className="text-[#1a1a1a]/60 hover:text-[#1a1a1a] transition-colors text-sm font-medium"
             >
               {link.label}
             </a>
@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* CTA */}
         <button
           onClick={openBooking}
-          className="hidden md:inline-flex items-center gap-2 bg-whatsapp text-white font-bold text-sm pl-4 pr-5 py-2.5 rounded-xl border-2 border-[#1a1a1a] shadow-[3px_3px_0_#1a1a1a] transition-all hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0_#1a1a1a] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+          className="hidden md:inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-sm pl-3 pr-5 py-2 rounded-full border-2 border-[#1a1a1a] shadow-[2px_2px_0_#1a1a1a] transition-all hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0_#1a1a1a]"
         >
           <span className="relative flex h-6 w-6 items-center justify-center">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/40" />
@@ -74,21 +74,9 @@ export default function Navbar() {
           className="md:hidden flex flex-col gap-1.5 p-2"
           aria-label="Menu"
         >
-          <span
-            className={`w-5 h-0.5 bg-[#1a1a1a] transition-all ${
-              mobileOpen ? "rotate-45 translate-y-2" : ""
-            }`}
-          />
-          <span
-            className={`w-5 h-0.5 bg-[#1a1a1a] transition-all ${
-              mobileOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`w-5 h-0.5 bg-[#1a1a1a] transition-all ${
-              mobileOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          />
+          <span className={`w-5 h-0.5 bg-[#1a1a1a] transition-all ${mobileOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`w-5 h-0.5 bg-[#1a1a1a] transition-all ${mobileOpen ? "opacity-0" : ""}`} />
+          <span className={`w-5 h-0.5 bg-[#1a1a1a] transition-all ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </nav>
 
@@ -99,7 +87,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden mx-4 mt-2 rounded-xl bg-white border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a] overflow-hidden"
+            className="md:hidden mx-auto max-w-4xl mt-2 rounded-2xl bg-white border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a] overflow-hidden"
           >
             <div className="px-6 py-5 flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -107,17 +95,14 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-text/80 hover:text-text text-lg font-manrope font-medium"
+                  className="text-[#1a1a1a]/80 hover:text-[#1a1a1a] text-lg font-medium"
                 >
                   {link.label}
                 </a>
               ))}
               <button
-                onClick={() => {
-                  setMobileOpen(false);
-                  openBooking();
-                }}
-                className="bg-whatsapp text-white font-bold text-center px-5 py-3 rounded-xl mt-2 border-2 border-[#1a1a1a] shadow-[3px_3px_0_#1a1a1a] transition-all hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0_#1a1a1a] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+                onClick={() => { setMobileOpen(false); openBooking(); }}
+                className="bg-[#25D366] text-white font-bold text-center px-5 py-3 rounded-full mt-2 border-2 border-[#1a1a1a] shadow-[2px_2px_0_#1a1a1a]"
               >
                 Réserver un appel
               </button>

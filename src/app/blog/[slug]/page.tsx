@@ -100,7 +100,7 @@ function createMdxComponents() {
       return (
         <h2
           id={id}
-          className="font-syne font-bold text-2xl md:text-3xl text-white mt-12 mb-4 scroll-mt-24"
+          className="font-syne font-bold text-2xl md:text-3xl text-[#1a1a1a] mt-12 mb-4 scroll-mt-24"
           {...props}
         >
           {children}
@@ -113,7 +113,7 @@ function createMdxComponents() {
       return (
         <h3
           id={id}
-          className="font-syne font-bold text-xl md:text-2xl text-white mt-8 mb-3 scroll-mt-24"
+          className="font-syne font-bold text-xl md:text-2xl text-[#1a1a1a] mt-8 mb-3 scroll-mt-24"
           {...props}
         >
           {children}
@@ -121,7 +121,7 @@ function createMdxComponents() {
       );
     },
     p: ({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
-      <p className="text-white/60 leading-relaxed mb-6" {...props}>
+      <p className="text-[#1a1a1a]/60 leading-relaxed mb-6" {...props}>
         {children}
       </p>
     ),
@@ -142,7 +142,7 @@ function createMdxComponents() {
     ),
     ul: ({ children, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
       <ul
-        className="text-white/60 space-y-2 mb-6 ml-6 list-disc marker:text-whatsapp/50"
+        className="text-[#1a1a1a]/60 space-y-2 mb-6 ml-6 list-disc marker:text-whatsapp/50"
         {...props}
       >
         {children}
@@ -150,7 +150,7 @@ function createMdxComponents() {
     ),
     ol: ({ children, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
       <ol
-        className="text-white/60 space-y-2 mb-6 ml-6 list-decimal marker:text-whatsapp/50"
+        className="text-[#1a1a1a]/60 space-y-2 mb-6 ml-6 list-decimal marker:text-whatsapp/50"
         {...props}
       >
         {children}
@@ -166,7 +166,7 @@ function createMdxComponents() {
       ...props
     }: React.HTMLAttributes<HTMLQuoteElement>) => (
       <blockquote
-        className="border-l-2 border-whatsapp/40 pl-6 py-2 my-6 text-white/50 italic"
+        className="border-l-4 border-whatsapp/40 pl-6 py-2 my-6 text-[#1a1a1a]/50 italic"
         {...props}
       >
         {children}
@@ -187,7 +187,7 @@ function createMdxComponents() {
       }
       return (
         <code
-          className="bg-white/[0.06] text-whatsapp px-1.5 py-0.5 rounded text-sm"
+          className="bg-black/5 text-whatsapp px-1.5 py-0.5 rounded text-sm"
           {...props}
         >
           {children}
@@ -196,18 +196,18 @@ function createMdxComponents() {
     },
     pre: ({ children, ...props }: React.HTMLAttributes<HTMLPreElement>) => (
       <pre
-        className="bg-white/[0.04] border border-white/[0.06] rounded-xl p-4 overflow-x-auto mb-6 text-sm"
+        className="bg-[#1a1a1a] text-white border-2 border-[#1a1a1a] rounded-xl p-4 overflow-x-auto mb-6 text-sm"
         {...props}
       >
         {children}
       </pre>
     ),
-    hr: () => <hr className="border-white/[0.06] my-10" />,
+    hr: () => <hr className="border-black/10 my-10" />,
     strong: ({
       children,
       ...props
     }: React.HTMLAttributes<HTMLElement>) => (
-      <strong className="text-white font-semibold" {...props}>
+      <strong className="text-[#1a1a1a] font-bold" {...props}>
         {children}
       </strong>
     ),
@@ -217,7 +217,7 @@ function createMdxComponents() {
     }: React.HTMLAttributes<HTMLTableElement>) => (
       <div className="overflow-x-auto mb-6">
         <table
-          className="w-full text-sm text-white/60 border-collapse"
+          className="w-full text-sm text-[#1a1a1a]/60 border-collapse"
           {...props}
         >
           {children}
@@ -229,7 +229,7 @@ function createMdxComponents() {
       ...props
     }: React.HTMLAttributes<HTMLTableCellElement>) => (
       <th
-        className="text-left text-white font-syne font-semibold px-4 py-3 border-b border-white/[0.08] bg-white/[0.02]"
+        className="text-left text-[#1a1a1a] font-syne font-semibold px-4 py-3 border-b-2 border-black/10 bg-black/5"
         {...props}
       >
         {children}
@@ -240,7 +240,7 @@ function createMdxComponents() {
       ...props
     }: React.HTMLAttributes<HTMLTableCellElement>) => (
       <td
-        className="px-4 py-3 border-b border-white/[0.06]"
+        className="px-4 py-3 border-b border-black/10"
         {...props}
       >
         {children}

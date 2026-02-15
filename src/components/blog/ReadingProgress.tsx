@@ -22,7 +22,7 @@ export default function ReadingProgress() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 h-[3px] bg-transparent">
       <div
-        className="h-full bg-whatsapp transition-[width] duration-100 ease-out shadow-[0_0_10px_rgba(37,211,102,0.5)]"
+        className="h-full bg-whatsapp transition-[width] duration-100 ease-out"
         style={{ width: `${progress}%` }}
       />
     </div>

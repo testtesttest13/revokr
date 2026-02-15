@@ -42,19 +42,18 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero section */}
-      <section className="relative bg-[#0a0a0a] pt-36 pb-16 overflow-hidden">
+      <section className="relative bg-[#FAFAFA] pt-36 pb-16 overflow-hidden">
         <div className="absolute inset-0 hero-grid-bg" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(37,211,102,0.08)_0%,transparent_70%)]" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <p className="text-whatsapp/40 text-xs font-mono uppercase tracking-widest mb-4">
             {"// Blog"}
           </p>
-          <h1 className="font-syne font-bold text-hero text-white leading-[1.08] mb-6">
+          <h1 className="font-syne font-bold text-hero text-[#1a1a1a] leading-[1.08] mb-6">
             Le Blog{" "}
             <span className="text-whatsapp">Rekovr</span>
           </h1>
-          <p className="text-white/50 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+          <p className="text-[#1a1a1a]/50 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
             Guides, strat&eacute;gies et retours d&apos;exp&eacute;rience pour
             transformer WhatsApp en machine &agrave; ventes pour votre boutique
             Shopify.
@@ -64,12 +63,12 @@ export default function BlogPage() {
 
       {/* Tags filter */}
       {tags.length > 0 && (
-        <section className="bg-[#0a0a0a] pb-8">
+        <section className="bg-[#FAFAFA] pb-8">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-wrap items-center gap-3">
               <Link
                 href="/blog"
-                className="inline-block text-sm font-medium px-4 py-2 rounded-full border bg-whatsapp/20 border-whatsapp/40 text-whatsapp transition-all"
+                className="inline-block text-sm font-bold px-4 py-2 rounded-lg border-2 border-[#1a1a1a] bg-whatsapp text-white shadow-[2px_2px_0_#1a1a1a] hover:shadow-[4px_4px_0_#1a1a1a] transition-all"
               >
                 Tous
               </Link>
@@ -83,19 +82,19 @@ export default function BlogPage() {
 
       {/* Featured article */}
       {featuredPost && (
-        <section className="bg-[#0a0a0a] pb-12">
+        <section className="bg-[#FAFAFA] pb-12">
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-whatsapp/40 text-xs font-mono uppercase tracking-widest mb-6">
               {"// Article mis en avant"}
             </p>
             <Link href={`/blog/${featuredPost.slug}`} className="group block">
-              <article className="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:border-whatsapp/30 hover:shadow-[0_0_40px_rgba(37,211,102,0.08)] md:grid md:grid-cols-2">
+              <article className="brutal-card rounded-2xl overflow-hidden border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a] transition-all duration-300 hover:shadow-[6px_6px_0_#1a1a1a] md:grid md:grid-cols-2">
                 {/* Icon */}
                 <div className="relative aspect-[16/10] md:aspect-auto md:min-h-[360px] overflow-hidden">
                   <div className="absolute inset-0">
                     <BlogIcon tags={featuredPost.tags} slug={featuredPost.slug} />
                   </div>
-                  <span className="absolute top-4 left-4 bg-whatsapp/90 text-white text-xs font-semibold px-3 py-1 rounded-full z-10">
+                  <span className="absolute top-4 left-4 bg-whatsapp text-white text-xs font-bold px-3 py-1 rounded-lg border-2 border-[#1a1a1a] z-10">
                     Featured
                   </span>
                 </div>
@@ -106,22 +105,22 @@ export default function BlogPage() {
                     <span className="text-whatsapp text-xs font-semibold uppercase tracking-wider">
                       {featuredPost.category.replace(/-/g, " ")}
                     </span>
-                    <span className="text-white/20">|</span>
-                    <span className="text-white/40 text-xs">
+                    <span className="text-[#1a1a1a]/20">|</span>
+                    <span className="text-[#1a1a1a]/40 text-xs">
                       {featuredPost.readingTime} min de lecture
                     </span>
                   </div>
-                  <h2 className="font-syne font-bold text-2xl md:text-3xl text-white group-hover:text-whatsapp transition-colors leading-tight mb-4">
+                  <h2 className="font-syne font-bold text-2xl md:text-3xl text-[#1a1a1a] group-hover:text-whatsapp transition-colors leading-tight mb-4">
                     {featuredPost.title}
                   </h2>
-                  <p className="text-white/50 leading-relaxed mb-6">
+                  <p className="text-[#1a1a1a]/50 leading-relaxed mb-6">
                     {featuredPost.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {featuredPost.tags.slice(0, 4).map((tag) => (
                       <span
                         key={tag}
-                        className="text-white/30 text-xs bg-white/[0.04] border border-white/[0.06] rounded-full px-3 py-1"
+                        className="text-[#1a1a1a]/50 text-xs bg-black/5 border border-black/10 rounded-lg px-3 py-1"
                       >
                         {tag}
                       </span>
@@ -134,10 +133,10 @@ export default function BlogPage() {
                       </span>
                     </div>
                     <div>
-                      <p className="text-white/70 text-xs font-medium">
+                      <p className="text-[#1a1a1a]/70 text-xs font-medium">
                         {featuredPost.author}
                       </p>
-                      <p className="text-white/30 text-xs">
+                      <p className="text-[#1a1a1a]/40 text-xs">
                         {new Date(featuredPost.publishedAt).toLocaleDateString(
                           "fr-FR",
                           {
@@ -158,7 +157,7 @@ export default function BlogPage() {
 
       {/* Posts grid */}
       {remainingPosts.length > 0 && (
-        <section className="bg-[#0a0a0a] pb-24">
+        <section className="bg-[#FAFAFA] pb-24">
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-whatsapp/40 text-xs font-mono uppercase tracking-widest mb-8">
               {"// Tous les articles"}
@@ -184,13 +183,13 @@ export default function BlogPage() {
 
       {/* Empty state */}
       {allPosts.length === 0 && (
-        <section className="bg-[#0a0a0a] py-24">
+        <section className="bg-[#FAFAFA] py-24">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <div className="glass-card rounded-2xl p-12">
-              <p className="text-white/30 text-lg mb-4">
+            <div className="brutal-card rounded-2xl p-12 border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a]">
+              <p className="text-[#1a1a1a]/40 text-lg mb-4">
                 Aucun article pour le moment.
               </p>
-              <p className="text-white/20 text-sm">
+              <p className="text-[#1a1a1a]/30 text-sm">
                 Revenez bient&ocirc;t pour d&eacute;couvrir nos premiers guides
                 sur le WhatsApp Marketing.
               </p>

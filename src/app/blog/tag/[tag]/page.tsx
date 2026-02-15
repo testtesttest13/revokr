@@ -70,13 +70,12 @@ export default function TagPage({
   return (
     <>
       {/* Hero section */}
-      <section className="relative bg-[#0a0a0a] pt-36 pb-16 overflow-hidden">
+      <section className="relative bg-[#FAFAFA] pt-36 pb-16 overflow-hidden">
         <div className="absolute inset-0 hero-grid-bg" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(37,211,102,0.08)_0%,transparent_70%)]" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           {/* Breadcrumb */}
-          <nav className="flex items-center justify-center gap-2 text-sm text-white/40 mb-8">
+          <nav className="flex items-center justify-center gap-2 text-sm text-[#1a1a1a]/40 mb-8">
             <Link href="/" className="hover:text-whatsapp transition-colors">
               Accueil
             </Link>
@@ -85,17 +84,17 @@ export default function TagPage({
               Blog
             </Link>
             <span>/</span>
-            <span className="text-white/60">{displayTag}</span>
+            <span className="text-[#1a1a1a]/60">{displayTag}</span>
           </nav>
 
           <p className="text-whatsapp/40 text-xs font-mono uppercase tracking-widest mb-4">
             {"// Tag"}
           </p>
-          <h1 className="font-syne font-bold text-hero text-white leading-[1.08] mb-6">
+          <h1 className="font-syne font-bold text-hero text-[#1a1a1a] leading-[1.08] mb-6">
             Articles sur{" "}
             <span className="text-whatsapp">{displayTag}</span>
           </h1>
-          <p className="text-white/50 text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-[#1a1a1a]/50 text-lg leading-relaxed max-w-2xl mx-auto">
             {posts.length > 0
               ? `${posts.length} article${posts.length > 1 ? "s" : ""} trouv\u00e9${posts.length > 1 ? "s" : ""} sur ce th\u00e8me.`
               : "Aucun article trouv\u00e9 pour ce tag."}
@@ -105,12 +104,12 @@ export default function TagPage({
 
       {/* Tags filter */}
       {allTags.length > 0 && (
-        <section className="bg-[#0a0a0a] pb-8">
+        <section className="bg-[#FAFAFA] pb-8">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-wrap items-center gap-3">
               <Link
                 href="/blog"
-                className="inline-block text-sm font-medium px-4 py-2 rounded-full border bg-white/[0.04] border-white/[0.08] text-white/60 hover:border-whatsapp/30 hover:text-whatsapp transition-all"
+                className="inline-block text-sm font-bold px-4 py-2 rounded-lg border-2 border-[#1a1a1a] bg-black/5 text-[#1a1a1a]/60 shadow-[2px_2px_0_#1a1a1a] hover:shadow-[4px_4px_0_#1a1a1a] hover:text-whatsapp transition-all"
               >
                 Tous
               </Link>
@@ -124,7 +123,7 @@ export default function TagPage({
                 return isActive ? (
                   <span
                     key={t}
-                    className="inline-block text-sm font-medium px-4 py-2 rounded-full border bg-whatsapp/20 border-whatsapp/40 text-whatsapp"
+                    className="inline-block text-sm font-bold px-4 py-2 rounded-lg border-2 border-[#1a1a1a] bg-whatsapp text-white shadow-[2px_2px_0_#1a1a1a]"
                   >
                     {t}
                   </span>
@@ -139,7 +138,7 @@ export default function TagPage({
 
       {/* Posts grid */}
       {posts.length > 0 ? (
-        <section className="bg-[#0a0a0a] pb-24">
+        <section className="bg-[#FAFAFA] pb-24">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {posts.map((post) => (
@@ -159,15 +158,15 @@ export default function TagPage({
           </div>
         </section>
       ) : (
-        <section className="bg-[#0a0a0a] py-24">
+        <section className="bg-[#FAFAFA] py-24">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <div className="glass-card rounded-2xl p-12">
-              <p className="text-white/30 text-lg mb-4">
+            <div className="brutal-card rounded-2xl p-12 border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a]">
+              <p className="text-[#1a1a1a]/40 text-lg mb-4">
                 Aucun article pour ce tag.
               </p>
               <Link
                 href="/blog"
-                className="inline-block text-whatsapp hover:text-whatsapp-dark text-sm font-medium transition-colors"
+                className="inline-block text-whatsapp hover:text-whatsapp-dark text-sm font-bold transition-colors"
               >
                 &larr; Retour au blog
               </Link>

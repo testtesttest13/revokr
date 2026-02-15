@@ -51,10 +51,10 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
 
   return (
     <nav className="sticky top-24">
-      <p className="font-syne font-semibold text-white text-sm uppercase tracking-wider mb-4">
+      <p className="font-syne font-semibold text-[#1a1a1a] text-sm uppercase tracking-wider mb-4">
         Sommaire
       </p>
-      <ul className="space-y-2 border-l border-white/[0.06]">
+      <ul className="space-y-2 border-l border-black/10">
         {headings.map(({ id, text, level }) => (
           <li key={id}>
             <button
@@ -64,7 +64,7 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
               } ${
                 activeId === id
                   ? "text-whatsapp border-whatsapp"
-                  : "text-white/40 border-transparent hover:text-white/60 hover:border-white/20"
+                  : "text-[#1a1a1a]/40 border-transparent hover:text-[#1a1a1a]/60 hover:border-black/20"
               }`}
             >
               {text}

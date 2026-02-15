@@ -29,7 +29,7 @@ export default function BlogCard({
 
   return (
     <Link href={`/blog/${slug}`} className="group block">
-      <article className="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:border-whatsapp/30 hover:translate-y-[-4px]">
+      <article className="bg-white rounded-xl border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a] overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0_#1a1a1a]">
         {/* Icon area */}
         <BlogIcon tags={tags} slug={slug} />
 
@@ -45,24 +45,24 @@ export default function BlogCard({
           )}
 
           {/* Title */}
-          <h3 className="font-syne font-bold text-xl text-white line-clamp-2 mb-2 group-hover:text-whatsapp transition-colors">
+          <h3 className="font-syne font-bold text-xl text-[#1a1a1a] line-clamp-2 mb-2 group-hover:text-whatsapp transition-colors">
             {title}
           </h3>
 
           {/* Excerpt */}
-          <p className="text-white/40 text-sm leading-relaxed line-clamp-3 mb-4">
+          <p className="text-[#1a1a1a]/40 text-sm leading-relaxed line-clamp-3 mb-4">
             {description}
           </p>
 
           {/* Footer */}
-          <div className="flex items-center justify-between pt-4 border-t border-white/[0.06]">
+          <div className="flex items-center justify-between pt-4 border-t-2 border-black/10">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-whatsapp/20 flex items-center justify-center">
                 <span className="text-whatsapp text-[10px] font-bold">J</span>
               </div>
-              <span className="text-white/40 text-xs">Jules</span>
+              <span className="text-[#1a1a1a]/40 text-xs">Jules</span>
             </div>
-            <div className="flex items-center gap-2 text-white/30 text-xs">
+            <div className="flex items-center gap-2 text-[#1a1a1a]/30 text-xs">
               <span>{formattedDate}</span>
               <span>&middot;</span>
               <span>{readingTime}</span>
