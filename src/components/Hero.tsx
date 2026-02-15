@@ -99,7 +99,7 @@ export default function Hero() {
       <div className="relative z-10 border-y-2 border-[#1a1a1a] bg-[#25D366] py-3 overflow-hidden">
         <div className="flex overflow-hidden">
           <div className="marquee-track flex animate-marquee gap-8 items-center whitespace-nowrap">
-            {[...Array(2)].map((_, i) => (
+            {[...Array(4)].map((_, i) => (
               <span key={i} className="flex items-center gap-8 text-white font-syne font-bold text-sm tracking-wide">
                 <span>WHATSAPP MARKETING</span>
                 <span className="text-white/60">·</span>
@@ -145,11 +145,11 @@ export default function Hero() {
                 { label: "REVENUE", value: "18,002 €" },
                 { label: "ROAS", value: "x16.87" },
               ].map((stat) => (
-                <div key={stat.label} className="bg-white border-2 border-[#1a1a1a] rounded-xl p-3 md:p-4">
-                  <p className="text-[10px] md:text-xs font-semibold text-[#1a1a1a]/50 mb-1 md:mb-2 tracking-wider">
+                <div key={stat.label} className="bg-white border-2 border-[#1a1a1a] rounded-xl p-2 sm:p-3 md:p-4">
+                  <p className="text-[8px] sm:text-[10px] md:text-xs font-semibold text-[#1a1a1a]/50 mb-1 md:mb-2 tracking-wider truncate">
                     {stat.label}
                   </p>
-                  <p className="text-[#1a1a1a] text-lg md:text-2xl font-bold font-syne">
+                  <p className="text-[#1a1a1a] text-sm sm:text-lg md:text-2xl font-bold font-syne">
                     {stat.value}
                   </p>
                 </div>
@@ -161,11 +161,11 @@ export default function Hero() {
                 { name: "Campagne VIP Soldes", sent: "3,410", open: "93.5%", rev: "8,192 €" },
                 { name: "Upsell post-achat", sent: "892", open: "94.8%", rev: "2,740 €" },
               ].map((row) => (
-                <div key={row.name} className="flex items-center justify-between bg-white border-2 border-[#e5e5e5] rounded-xl px-3 md:px-4 py-3 text-xs md:text-sm transition-all hover:border-[#1a1a1a] hover:shadow-[2px_2px_0_#1a1a1a]">
-                  <span className="text-[#1a1a1a]/70 font-medium flex-1 truncate">{row.name}</span>
-                  <span className="text-[#1a1a1a]/40 w-16 md:w-20 text-center hidden sm:block">{row.sent}</span>
-                  <span className="text-[#25D366] w-16 md:w-20 text-center font-bold">{row.open}</span>
-                  <span className="text-[#1a1a1a]/60 w-20 md:w-24 text-right font-medium">{row.rev}</span>
+                <div key={row.name} className="flex items-center justify-between bg-white border-2 border-[#e5e5e5] rounded-xl px-2 sm:px-3 md:px-4 py-2.5 sm:py-3 text-[10px] sm:text-xs md:text-sm transition-all hover:border-[#1a1a1a] hover:shadow-[2px_2px_0_#1a1a1a]">
+                  <span className="text-[#1a1a1a]/70 font-medium flex-1 truncate mr-2">{row.name}</span>
+                  <span className="text-[#1a1a1a]/40 w-12 sm:w-16 md:w-20 text-center hidden sm:block">{row.sent}</span>
+                  <span className="text-[#25D366] w-12 sm:w-16 md:w-20 text-center font-bold">{row.open}</span>
+                  <span className="text-[#1a1a1a]/60 w-16 sm:w-20 md:w-24 text-right font-medium">{row.rev}</span>
                 </div>
               ))}
             </div>
