@@ -10,6 +10,7 @@ const floatingLogos = [
   { src: "/logos/kanal.svg", alt: "Kanal", size: 48, top: "45%", left: "4%", rotate: 6, delay: 1, duration: 5.5, border: "#25D366", shadow: "#25D366" },
   { src: "/logos/meta.png", alt: "Meta", size: 50, top: "40%", right: "5%", rotate: -12, delay: 1.5, duration: 4, border: "#0081FB", shadow: "#0081FB" },
   { src: "/logos/woo.webp", alt: "WooCommerce", size: 46, top: "65%", left: "8%", rotate: 14, delay: 0.8, duration: 5.2, border: "#7F54B3", shadow: "#7F54B3" },
+  { src: "/whatsapp-logo.webp", alt: "WhatsApp", size: 48, top: "62%", right: "6%", rotate: 8, delay: 1.2, duration: 4.8, border: "#25D366", shadow: "#25D366" },
 ];
 
 export default function Hero() {
