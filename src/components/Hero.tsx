@@ -1,7 +1,16 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useBooking } from "./BookingProvider";
+
+const floatingLogos = [
+  { src: "/logos/shopify.png", alt: "Shopify", size: 52, top: "12%", left: "6%", rotate: -8, delay: 0, duration: 5 },
+  { src: "/logos/klaviyo.png", alt: "Klaviyo", size: 50, top: "18%", right: "7%", rotate: 10, delay: 0.5, duration: 4.5 },
+  { src: "/logos/kanal.svg", alt: "Kanal", size: 48, top: "45%", left: "4%", rotate: 6, delay: 1, duration: 5.5 },
+  { src: "/logos/meta.png", alt: "Meta", size: 50, top: "40%", right: "5%", rotate: -12, delay: 1.5, duration: 4 },
+  { src: "/logos/woo.webp", alt: "WooCommerce", size: 46, top: "65%", left: "8%", rotate: 14, delay: 0.8, duration: 5.2 },
+];
 
 export default function Hero() {
   const { openBooking } = useBooking();
@@ -11,21 +20,39 @@ export default function Hero() {
       {/* Grid background */}
       <div className="absolute inset-0 hero-grid-bg" />
 
-      {/* Decorative floating stickers */}
-      <motion.div
-        animate={{ rotate: [12, 15, 12], y: [0, -10, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-32 right-[10%] hidden lg:block bg-[#25D366] text-white font-syne font-bold text-sm px-4 py-2 rounded-xl border-2 border-[#1a1a1a] shadow-[3px_3px_0_#1a1a1a] rotate-12 z-20"
-      >
-        96% open rate
-      </motion.div>
-      <motion.div
-        animate={{ rotate: [-6, -9, -6], y: [0, -8, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="absolute top-48 left-[8%] hidden lg:block bg-white text-[#1a1a1a] font-syne font-bold text-sm px-4 py-2 rounded-xl border-2 border-[#1a1a1a] shadow-[3px_3px_0_#1a1a1a] -rotate-6 z-20"
-      >
-        ROI 12-26×
-      </motion.div>
+      {/* Floating partner logos */}
+      {floatingLogos.map((logo) => (
+        <motion.div
+          key={logo.alt}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: [0, -12, 0],
+            rotate: [logo.rotate, logo.rotate + 4, logo.rotate],
+          }}
+          transition={{
+            opacity: { duration: 0.6, delay: logo.delay + 0.3 },
+            scale: { duration: 0.6, delay: logo.delay + 0.3 },
+            y: { duration: logo.duration, repeat: Infinity, ease: "easeInOut", delay: logo.delay },
+            rotate: { duration: logo.duration, repeat: Infinity, ease: "easeInOut", delay: logo.delay },
+          }}
+          className="absolute hidden lg:flex items-center justify-center z-20 bg-white rounded-2xl border-2 border-[#1a1a1a] shadow-[3px_3px_0_#1a1a1a] p-3"
+          style={{
+            top: logo.top,
+            left: logo.left,
+            right: logo.right,
+          }}
+        >
+          <Image
+            src={logo.src}
+            alt={logo.alt}
+            width={logo.size}
+            height={logo.size}
+            className="object-contain"
+          />
+        </motion.div>
+      ))}
 
       {/* Main content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 pt-36 pb-10 text-center">
