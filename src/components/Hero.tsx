@@ -7,7 +7,7 @@ import { useBooking } from "./BookingProvider";
 const floatingLogos = [
   { src: "/logos/shopify.png", alt: "Shopify", size: 52, top: "12%", left: "6%", rotate: -8, delay: 0, duration: 5, border: "#96BF48", shadow: "#96BF48" },
   { src: "/logos/klaviyo.png", alt: "Klaviyo", size: 50, top: "18%", right: "7%", rotate: 10, delay: 0.5, duration: 4.5, border: "#BF2E7B", shadow: "#BF2E7B" },
-  { src: "/logos/kanal.svg", alt: "Kanal", size: 32, top: "45%", left: "4%", rotate: 6, delay: 1, duration: 5.5, border: "#25D366", shadow: "#25D366" },
+  { src: "/logos/kanal.svg", alt: "Kanal", size: 32, imgClassName: "object-contain w-6 h-6 sm:w-8 sm:h-8 lg:w-8 lg:h-8", top: "45%", left: "4%", rotate: 6, delay: 1, duration: 5.5, border: "#25D366", shadow: "#25D366" },
   { src: "/logos/meta.png", alt: "Meta", size: 50, top: "40%", right: "5%", rotate: -12, delay: 1.5, duration: 4, border: "#0081FB", shadow: "#0081FB" },
   { src: "/logos/woo.webp", alt: "WooCommerce", size: 46, top: "65%", left: "8%", rotate: 14, delay: 0.8, duration: 5.2, border: "#7F54B3", shadow: "#7F54B3" },
   { src: "/whatsapp-logo.webp", alt: "WhatsApp", size: 48, top: "62%", right: "6%", rotate: 8, delay: 1.2, duration: 4.8, border: "#25D366", shadow: "#25D366" },
@@ -52,7 +52,7 @@ export default function Hero() {
             alt={logo.alt}
             width={logo.size}
             height={logo.size}
-            className="object-contain w-6 h-6 sm:w-8 sm:h-8 lg:w-auto lg:h-auto"
+            className={logo.imgClassName || "object-contain w-6 h-6 sm:w-8 sm:h-8 lg:w-auto lg:h-auto"}
           />
         </motion.div>
       ))}
